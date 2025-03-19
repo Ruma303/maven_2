@@ -1,0 +1,6 @@
+library/Query.class
+app/Main.class
+library/Libro.class
+library/GestoreBiblioteca.class
+app/DatabaseManager.class
+library/Lettore.class
