@@ -1,6 +1,6 @@
 # **Creazione di un progetto Maven da eseguire**
 
-**NB**: La seguente è un'applicazione Java/Maven con MySQL come backend. A questo potrà essere aggiunto frontend o delle interfacce grafiche.
+>**NB**: La seguente è un'applicazione Java/Maven con MySQL come backend. A questo potrà essere aggiunto frontend o delle interfacce grafiche.
 
 ## **1. Database di esempio**
 
@@ -130,6 +130,17 @@ Creare applicazioni eseguibili da Maven non è così comune ma è comunque possi
 ### **1. Aggiungere il plugin `jpackage` al pom.xml**
 
 `jpackage` è un tool integrato in JDK 14+ (quindi non è un plugin Maven separato) e può essere utilizzato direttamente dalla linea di comando, senza bisogno di modificare il pom.xml per aggiungere un plugin. Tuttavia, per la creazione di pacchetti nativi su ogni sistema operativo, dovremmo eseguire il comando direttamente tramite Maven o da terminale.
+
+1. Scarichiamo il plugin dal [Repository Maven](https://central.sonatype.com/artifact/com.evolvedbinary.appbundler/appbundler-maven-plugin).
+2. Installiamo il plugin.
+
+```xml
+<dependency>
+    <groupId>com.evolvedbinary.appbundler</groupId>
+    <artifactId>appbundler-maven-plugin</artifactId>
+    <version>3.2.0</version>
+</dependency>
+```
 
 ### **2. Eseguire il comando `jpackage` direttamente dalla linea di comando**
 
